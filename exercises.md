@@ -6,15 +6,15 @@ A repository dedicated to documenting my journey learning to program.
 
 - 1.1-1: Give a real-world example that requires sorting or a real-world example that re-
 quires computing a convex hull.
-R:
+R: A ordenação de amnoácidos é necessária para produzir proteínas específicas em laboratório. O livre caminho médio, por definição, é um invólucro convexo, pois representa o mínimo conjunto de pontos que formam o espaço ao redor de um gás ideal para que o mesmo não colida com outra molécula, contendo todo segmento de reta a qual une dois pontos desse espaço.
 
 - 1.1-2: Other than speed, what other measures of efficiency might one use in a real-world
 setting?
-R: Em contextos cotidianos, a eficiência de um algoritmo pode ser mensurada por retorno financeiro, mitigação de danos, alcance, tráfego, distribuição, consumo de recursos ou outros parâmetros que podem descrever a resolução de um problema bem definido.
+R: Além da velocidade, o espaço ocupado pelo processamento dos dados e o gasto energético para manter o funcionamento do algoritmo são critérios importantes quando mensuramos a eficiência.
 
 - 1.1-3: Select a data structure that you have seen previously, and discuss its strengths and
 limitations.
-R:
+R: Grafo. Vantagens: permite verificar como os dados se relacionam; descreve muitas situações cotidianas. Desvantagens: problemas envolvendo grafos podem se tornar muito complexos; conjuntos de dados maiores são mais difíceis de analisar e armazenar quando são organizados em grafos.
 
 - 1.1-4: How are the shortest-path and traveling-salesman problems given above similar?
 How are they different?
@@ -23,4 +23,4 @@ R: O problema do caminho mais curto e do vendedor viajante são semelhantes no q
 - 1.1-5: Come up with a real-world problem in which only the best solution will do. Then
 come up with one in which a solution that is “approximately” the best is good
 enough.
-R:
+R: 
