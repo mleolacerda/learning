@@ -29,7 +29,7 @@ R: Bancos, lojas online ou qualquer outro software que guarde informações pess
 
 - 1.2-1: Give an example of an application that requires algorithmic content at the applica-
 tion level, and discuss the function of the algorithms involved.  
-R:
+R: Softwares que fazem o processamento de dados geográficos para produzir mapas. Existem algoritmos que fazem a interpolação dos dados para produzir escalas.
 
 - 1.2-2: Suppose we are comparing implementations of insertion sort and merge sort on the
 same machine. For inputs of size n, insertion sort runs in 8n^2 steps, while merge
