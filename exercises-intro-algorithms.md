@@ -41,12 +41,12 @@ for (let n = 1; n <= 64; n++) {
   let insertionSortTime = 8 * (n**2);  
   let mergeSortTime = 64 * n * Math.log2(n);  
   if (insertionSortTime > mergeSortTime) {  
-  console.log(`insertion sort greater than merge sort for n equal to ${n}`);  
+    console.log(`insertion sort greater than merge sort for n equal to ${n}`);  
   }  
   else if (insertionSortTime == mergeSortTime) {  
-  console.log(`insertion sort equal to merge sort for n equal to ${n}`);  
+    console.log(`insertion sort equal to merge sort for n equal to ${n}`);  
   } else {  
-  console.log(`insertion sort smaller than merge sort for n equal to ${n}`);  
+    console.log(`insertion sort smaller than merge sort for n equal to ${n}`);  
 }
 ```  
 
@@ -68,6 +68,52 @@ for (let n = 1; n <= 100; n++) {
 }  
 ```
 
-Problem 1-1 Comparison of running times:
+Problem 1-1 Comparison of running times: Desnecessário.  
 
 ## CAPÍTULO 2 - Getting Started
+
+- 2.1-1: Using Figure 2.2 as a model, illustrate the operation of INSERTION-SORT on the
+array A D h31; 41; 59; 26; 41; 58i.  
+R: Desnecessário  
+
+- 2.1-2: Rewrite the INSERTION-SORT procedure to sort into nonincreasing instead of non-
+decreasing order.  
+R:  
+
+```
+function insertionSort(array) {
+    for (let j = 0; j < array.length; j++) {
+        let element = array[j];
+        let i = j - 1;
+        
+        while (array[i] < element && i >= 0) {
+            array[i + 1] = array[i];
+            i = i - 1;
+        }
+        
+        array[i + 1] = element;
+    }
+    
+    return array;
+}
+```
+
+- 2.1-3: Write a pseudocode for linear search. Using a loop invariant, prove that your algorithm is correct.  
+R:  
+
+```
+function  linearSearch(array, value) {
+    let position = [];
+    for (let i = 0; i < array.length; i++) {
+        if (value === array[i]) {
+            position.push(i);
+        }
+    }
+    if (position.length === 0) {
+        return console.log(`This value doesn't exist in that sequence`);
+    }
+
+    return console.log(`The value was found in position ${position}`);
+}
+
+```
