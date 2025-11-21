@@ -1,14 +1,15 @@
 // Exercise 1.2-2
 for (let n = 1; n <= 64; n++) {  
-  let insertionSortTime = 8 * (n**2);  
-  let mergeSortTime = 64 * n * Math.log2(n);  
-  if (insertionSortTime > mergeSortTime) {  
-    console.log(`insertion sort greater than merge sort for n equal to ${n}`);  
-  }  
-  else if (insertionSortTime == mergeSortTime) {  
-    console.log(`insertion sort equal to merge sort for n equal to ${n}`);  
-  } else {  
-    console.log(`insertion sort smaller than merge sort for n equal to ${n}`);  
+    let insertionSortTime = 8 * (n**2);  
+    let mergeSortTime = 64 * n * Math.log2(n);  
+    if (insertionSortTime > mergeSortTime) {  
+        console.log(`insertion sort greater than merge sort for n equal to ${n}`);  
+    }  
+    else if (insertionSortTime == mergeSortTime) {  
+        console.log(`insertion sort equal to merge sort for n equal to ${n}`);  
+    } else {  
+        console.log(`insertion sort smaller than merge sort for n equal to ${n}`);  
+    }
 }
 
 // Exercise 1.2-3
