@@ -1,7 +1,3 @@
-# learning
-
-A repository dedicated to documenting my journey learning to program.
-
 # INTRODUCTION TO ALGORITHMS
 
 ## CAPÍTULO 1 - The Role of Algorithms in Computing
